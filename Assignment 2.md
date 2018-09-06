@@ -1,4 +1,4 @@
-  p -> q <=> q' -> p'
+        p -> q <=> q' -> p'
 
 	p' v q <=> q'' v p' | Implication Law
 
