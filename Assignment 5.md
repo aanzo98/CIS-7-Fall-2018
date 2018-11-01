@@ -14,7 +14,7 @@ n = 100|√100 = 10|10 x 10 = 100||√64 = 8|8 x 8 = 64|√36 = 6|6 x 6 = 36| 64
 n = 169|√169 = 13|13 x 13 = 169||√144 = 12|12 x 12 = 144|√25 = 5|5 x 5 = 25| 144 + 25 = 169
 Proof by exhaustion.
 
-- The sum of two odd integers is even.
+-The sum of two odd integers is even.
   Hint: By definition, even integers can be expressed as 2n,
   thus odd integers can be expressed as 2n + 1
 even = 2n | odd = 2n + 1
@@ -22,14 +22,14 @@ even = 2n | odd = 2n + 1
 2n + 2m + 2 = even | Sum of two odd integers is even.
 Direct proof.
 
-- The sum of an even integer and it's square is even.
+-The sum of an even integer and it's square is even.
 even = 2n | odd = 2n + 1
 2n + 2n^2
 2n + (2n)(2n) = 4n^2 + 2n | All integers divisible by 2
 4n^2 + 2n = even | Sum of an even integers and it's square is even.
 Direct proof.
 
-- If n squared is odd, then n is odd
+-If n squared is odd, then n is odd
 if n is even, then n^2 is even
 n = 2k
 n^2 = 4k^2 = 2(2k^2)
@@ -38,7 +38,7 @@ Proof by contraposition.
 
 Part 2:
 
-- Prove by induction that 1 + 5 + 9 + ... + (4n-3) = n(2n-1)
+-Prove by induction that 1 + 5 + 9 + ... + (4n-3) = n(2n-1)
 Base Case: Assume n = 1
 (4(1)-3) = 1(2(1)-1)
 (4-3) = 1(2-1)
@@ -55,7 +55,7 @@ k(2k - 1) + (4k + 1) = (k + 1)(2k + 1)
 2k^2 + 3k + 1 = 2k^2 + 3k + 1
 Proven for n and (n + 1)
 
-- Prove that for any positive integer number n, n^3 + 2n is divisible by 3
+-Prove that for any positive integer number n, n^3 + 2n is divisible by 3
 Assuming n > 0
 Base Case: Assume n = 1
 1^3 + 2(1)
