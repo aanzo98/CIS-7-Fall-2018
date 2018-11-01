@@ -1,6 +1,6 @@
 Part 1:
 
-- Show that the square root of 2 is irrational
+-Show that the square root of 2 is irrational
 Assume that √2 = a/b
 a and b are whole numbers | b != 0
 a = dm + 1 | b = dm + 1 | a and b cannot be even
@@ -8,7 +8,7 @@ a^2 = 2 · b^2 <=> √2 = a/b | Square of a is even. 2 times b^2
 a != dm + 1 | a cannot be odd, odd times odd = odd.
 Proof by contradiction.
 
-- If n = 25, 100, or 169, then n is a perfect square and is the sum of two perfect squares.
+-If n = 25, 100, or 169, then n is a perfect square and is the sum of two perfect squares.
 n = 25|√25 = 5|5 x 5 = 25||√16 = 4|4 x 4 = 16|√9 = 3|3 x 3 = 9|16 + 9 = 25
 n = 100|√100 = 10|10 x 10 = 100||√64 = 8|8 x 8 = 64|√36 = 6|6 x 6 = 36| 64 + 36 = 100
 n = 169|√169 = 13|13 x 13 = 169||√144 = 12|12 x 12 = 144|√25 = 5|5 x 5 = 25| 144 + 25 = 169
