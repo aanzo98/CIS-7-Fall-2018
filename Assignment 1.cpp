@@ -9,6 +9,7 @@ int main()
 	bool lastWasConnector = false;
 	bool lastWasDash = false;
 	bool fail = false;
+	bool parenthesisFlag = false;
 
 	int letterRepetitionCheck = 0;
 	int ConectorRepetionCheck = 0;
@@ -43,7 +44,7 @@ int main()
 				{
 					if (lastWasLetter != true)
 					{
-						cout << "Not a Valid WFF" << endl << endl;
+						cout << "Not a Valid WFF. No letter before '!' found." << endl << endl;
 						fail = true;
 						break;
 					}
@@ -52,7 +53,7 @@ int main()
 				{
 					if (lastWasLetter != true)
 					{
-						cout << "Not a Valid WFF" << endl << endl;
+						cout << "Not a Valid WFF. No letter before '-' found." << endl << endl;
 						fail = true;
 						break;
 					}
@@ -63,30 +64,39 @@ int main()
 				{
 					if (lastWasDash != true)
 					{
-						cout << "Not a Valid WFF" << endl << endl;
+						cout << "Not a Valid WFF. Incomplete implies-connector." << endl << endl;
 						fail = true;
 						break;
 					}
 					ConectorRepetionCheck = 0;
 				}
 				if (c == '(' || c == ')')
+				{
 					paranthesisChecker += 1;
+					ConectorRepetionCheck = 0;
+					parenthesisFlag = true;
+				}
 
 				if (ConectorRepetionCheck == 1)
 				{
-					cout << "Not a Valid WFF. con rep" << endl << endl;
+					cout << "Not a Valid WFF. Connector Repetition." << endl << endl;
 					fail = true;
 					break;
 				}
 				lastWasConnector = true;
 				letterRepetitionCheck = 0;
-				ConectorRepetionCheck = 1;
+				if (parenthesisFlag == true)
+					ConectorRepetionCheck = 0;
+				else if (parenthesisFlag == false)
+					ConectorRepetionCheck = 1;
+
+				parenthesisFlag = false;
 			}
 			else if (letters.find(c) != string::npos)
 			{
 				if (letterRepetitionCheck == 1)
 				{
-					cout << "Not a Valid WFF. let rep" << endl << endl;
+					cout << "Not a Valid WFF. Letter repetition." << endl << endl;
 					fail = true;
 					break;
 				}
