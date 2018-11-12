@@ -8,6 +8,7 @@ Translate: “Mathematics is easy or camping is fun, as long as it is sunny and 
 
 Part 2:
 Use a truth table. Tautology, contradiction, or neither: (¬B → ¬A) → ((¬B → A) → B)
+
 | ¬B | ¬A | B | A | (¬B → ¬A) | ((¬B → A) → B) | (¬B → ¬A) → ((¬B → A) → B) |
 |----|:--:|---|---|-----------|----------------|----------------------------|
 |  F |  F | T | T |     F     |        T       |              T             |
@@ -16,6 +17,7 @@ Use a truth table. Tautology, contradiction, or neither: (¬B → ¬A) → ((¬B
 |  T |  T | F | F |     T     |        F       |              F             |
 
 Use a truth table.Tautology, contradiction, or neither: ((A → B)∧(B → ¬A)) → A
+
 | A | B | ¬A | (A → B) | (B → ¬A) | (A → B)∧(B → ¬A) | ((A → B)∧(B → ¬A)) → A |
 |---|:-:|----|---------|----------|------------------|------------------------|
 | T | T |  F |    T    |     F    |         F        |            T           |
